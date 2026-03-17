@@ -5,7 +5,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = "django-insecure-change-this-later"
 DEBUG = True
-ALLOWED_HOSTS = ["*"]
+
+ALLOWED_HOSTS = [
+    "plantshop-dqrj.onrender.com",
+    "127.0.0.1",
+    "localhost",
+]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -95,4 +100,9 @@ CORS_ALLOW_ALL_ORIGINS = False
 
 CORS_ALLOWED_ORIGINS = [
     "https://plant-shop-orpin.vercel.app",
+    "https://plant-shop-ivd4n736d-nilaramamoorthys-projects.vercel.app",
+]
+
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^https://.*\.vercel\.app$",
 ]
